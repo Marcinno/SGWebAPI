@@ -5,22 +5,26 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
 namespace SGWebAPI.Controllers
 {
     [Route("api")]
-    public class ValuesController : Controller
+    public class UserController : Controller
     {
-        private string communicationKey = "GQDstc21ewfffffffffffFiwDffVvVBrk"; //test string uses to create a key
-        [HttpGet("Login")]
-        public IActionResult Login()
+        private readonly IConfiguration _configuration;
+
+        public UserController(IConfiguration Configuration)
         {
+            _configuration = Configuration;
+        }
 
-            string name = "test"; // hard-coded login and passwort to test JWT
-            string password = "test";
-
+        [HttpPost("login")]
+        public IActionResult login(string name, string password)
+        {
 
             if (name == "test" && password == "test")
             {
@@ -29,10 +33,12 @@ namespace SGWebAPI.Controllers
                     new Claim(ClaimTypes.Name, name)
                 };
 
-                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(communicationKey));
+                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Token:Key"]));
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
                 var token = new JwtSecurityToken(
+                    audience: "yourdomain.com",
+                    issuer: "yourdomain.com",
                     claims: claims,
                     expires: DateTime.Now.AddMinutes(30),
                     signingCredentials: creds);
@@ -44,6 +50,13 @@ namespace SGWebAPI.Controllers
 
             }
             return BadRequest("Wrong login or password!");
+        }
+
+        [Authorize(AuthenticationSchemes = "Bearer")]
+        [HttpGet("test")]
+        public IActionResult test()
+        {
+            return Ok("Jak się włamiesz to kurwa to zobaczysz, #Hackerman");
         }
 
 

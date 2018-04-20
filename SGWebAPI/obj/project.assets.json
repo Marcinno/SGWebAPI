@@ -13127,11 +13127,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "A:\\Repositories\\Scrum_API\\SGWebAPI\\SGWebAPI\\SGWebAPI.csproj",
+      "projectUniqueName": "A:\\Repositories\\Scrum_API\\SGWebAPI_REMOTE\\SGWebAPI\\SGWebAPI\\SGWebAPI.csproj",
       "projectName": "SGWebAPI",
-      "projectPath": "A:\\Repositories\\Scrum_API\\SGWebAPI\\SGWebAPI\\SGWebAPI.csproj",
+      "projectPath": "A:\\Repositories\\Scrum_API\\SGWebAPI_REMOTE\\SGWebAPI\\SGWebAPI\\SGWebAPI.csproj",
       "packagesPath": "C:\\Users\\Marcin\\.nuget\\packages\\",
-      "outputPath": "A:\\Repositories\\Scrum_API\\SGWebAPI\\SGWebAPI\\obj\\",
+      "outputPath": "A:\\Repositories\\Scrum_API\\SGWebAPI_REMOTE\\SGWebAPI\\SGWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
