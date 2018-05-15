@@ -1,0 +1,9 @@
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\Contracts\bin\Debug\netcoreapp2.0\SGWebAPI.Contracts.deps.json
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\Contracts\bin\Debug\netcoreapp2.0\SGWebAPI.Contracts.dll
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\Contracts\obj\Debug\netcoreapp2.0\SGWebAPI.Contracts.csproj.CoreCompileInputs.cache
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\Contracts\obj\Debug\netcoreapp2.0\SGWebAPI.Contracts.AssemblyInfoInputs.cache
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\Contracts\obj\Debug\netcoreapp2.0\SGWebAPI.Contracts.AssemblyInfo.cs
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\Contracts\bin\Debug\netcoreapp2.0\SGWebAPI.Contracts.pdb
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\Contracts\obj\Debug\netcoreapp2.0\SGWebAPI.Contracts.dll
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\Contracts\obj\Debug\netcoreapp2.0\SGWebAPI.Contracts.pdb
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\Contracts\obj\Debug\netcoreapp2.0\SGWebAPI.Contracts.csprojResolveAssemblyReference.cache

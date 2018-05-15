@@ -28,6 +28,14 @@ namespace SGWebAPI
         {
             services.AddMvc();
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials());
+            });
 
             services.AddAuthentication(o =>
             {
@@ -41,7 +49,7 @@ namespace SGWebAPI
                     ValidateAudience = true,
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Token:Key"])),
                     ValidIssuer = Configuration["Token:Issuer"],
-                    ValidAudience = Configuration["Token:Issuer"],
+                    ValidAudience = Configuration["Token:Audience"],
                     ValidateIssuerSigningKey = true,
                     ValidateLifetime = true
 
@@ -57,6 +65,8 @@ namespace SGWebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors("CorsPolicy");
 
             app.UseMvc();
 

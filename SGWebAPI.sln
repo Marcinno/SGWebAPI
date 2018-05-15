@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SGWebAPI", "SGWebAPI\SGWebAPI.csproj", "{F73E2A27-9620-4192-A5A2-44F9E34463B8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SGWebAPI.Contracts", "Contracts\SGWebAPI.Contracts.csproj", "{D66A472C-6D75-4275-B595-036AA79383DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F73E2A27-9620-4192-A5A2-44F9E34463B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F73E2A27-9620-4192-A5A2-44F9E34463B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F73E2A27-9620-4192-A5A2-44F9E34463B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D66A472C-6D75-4275-B595-036AA79383DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D66A472C-6D75-4275-B595-036AA79383DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D66A472C-6D75-4275-B595-036AA79383DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D66A472C-6D75-4275-B595-036AA79383DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

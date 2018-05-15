@@ -8,13 +8,13 @@ using Microsoft.AspNetCore.Mvc;
 namespace SGWebAPI.Controllers
 {
     [Route("api/task")]
-    public class TaskController : Controller
+    public class TaskController : Controller //feature controller
     {
         [Authorize(AuthenticationSchemes = "Bearer")]
         [HttpGet("test")]
         public IActionResult get()
         {
-            return Ok("Encoded string from other controller");
+            return Ok("Encoded string from other controller"); 
         }
     }
 }

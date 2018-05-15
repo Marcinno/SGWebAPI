@@ -9,9 +9,11 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using SGWebAPI.Contracts.Models;
 
 namespace SGWebAPI.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Bearer")]
     [Route("api")]
     public class UserController : Controller
     {
@@ -21,24 +23,23 @@ namespace SGWebAPI.Controllers
         {
             _configuration = Configuration;
         }
-
+        [AllowAnonymous]
         [HttpPost("login")]
-        public IActionResult login(string name, string password)
+        public IActionResult login([FromBody] User model)
         {
-
-            if (name == "test" && password == "test")
+            if (model.name == "Testowy1!" && model.password == "Testowy1!")
             {
                 var claims = new[]
                 {
-                    new Claim(ClaimTypes.Name, name)
+                    new Claim(ClaimTypes.Name, model.name)
                 };
 
                 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Token:Key"]));
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
                 var token = new JwtSecurityToken(
-                    audience: "yourdomain.com",
-                    issuer: "yourdomain.com",
+                    audience: _configuration["Token:Audience"], 
+                    issuer: _configuration["Token:Issuer"],
                     claims: claims,
                     expires: DateTime.Now.AddMinutes(30),
                     signingCredentials: creds);
@@ -52,11 +53,10 @@ namespace SGWebAPI.Controllers
             return BadRequest("Wrong login or password!");
         }
 
-        [Authorize(AuthenticationSchemes = "Bearer")]
         [HttpGet("test")]
-        public IActionResult test()
+        public IActionResult test() // Test method to check JWT works correctly
         {
-            return Ok("Jak się włamiesz to kurwa to zobaczysz, #Hackerman");
+            return Ok("Jak się włamiesz to kurwa to zobaczysz, #Hackerman");  
         }
 
 

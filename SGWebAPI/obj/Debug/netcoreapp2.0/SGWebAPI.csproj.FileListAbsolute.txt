@@ -20,3 +20,16 @@ A:\Repositories\Scrum_API\SGWebAPI_REMOTE\SGWebAPI\SGWebAPI\bin\Debug\netcoreapp
 A:\Repositories\Scrum_API\SGWebAPI_REMOTE\SGWebAPI\SGWebAPI\bin\Debug\netcoreapp2.0\SGWebAPI.runtimeconfig.dev.json
 A:\Repositories\Scrum_API\SGWebAPI_REMOTE\SGWebAPI\SGWebAPI\bin\Debug\netcoreapp2.0\SGWebAPI.dll
 A:\Repositories\Scrum_API\SGWebAPI_REMOTE\SGWebAPI\SGWebAPI\bin\Debug\netcoreapp2.0\SGWebAPI.pdb
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\SGWebAPI\bin\Debug\netcoreapp2.0\SGWebAPI.deps.json
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\SGWebAPI\bin\Debug\netcoreapp2.0\SGWebAPI.runtimeconfig.json
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\SGWebAPI\bin\Debug\netcoreapp2.0\SGWebAPI.runtimeconfig.dev.json
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\SGWebAPI\bin\Debug\netcoreapp2.0\SGWebAPI.dll
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\SGWebAPI\bin\Debug\netcoreapp2.0\SGWebAPI.pdb
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\SGWebAPI\obj\Debug\netcoreapp2.0\SGWebAPI.csprojResolveAssemblyReference.cache
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\SGWebAPI\obj\Debug\netcoreapp2.0\SGWebAPI.csproj.CoreCompileInputs.cache
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\SGWebAPI\obj\Debug\netcoreapp2.0\SGWebAPI.AssemblyInfoInputs.cache
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\SGWebAPI\obj\Debug\netcoreapp2.0\SGWebAPI.AssemblyInfo.cs
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\SGWebAPI\obj\Debug\netcoreapp2.0\SGWebAPI.dll
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\SGWebAPI\obj\Debug\netcoreapp2.0\SGWebAPI.pdb
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\SGWebAPI\bin\Debug\netcoreapp2.0\SGWebAPI.Contracts.dll
+A:\Repositories\Scrum_API\SGWebAPI_TEST\SGWebAPI\SGWebAPI\bin\Debug\netcoreapp2.0\SGWebAPI.Contracts.pdb
